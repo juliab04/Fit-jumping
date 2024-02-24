@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI by Abubaker Saeed</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="dash">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header__heading"><a href="#" target="_blank" rel="noreferrer noopener">DI</a></h1>
+        <div class="header__search">
+            <div class="header__search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+        <div class="header__options">
+            <a href="#" class="header__link">Log in</a>
+            <a href="signout" class="header__link">Sign up</a>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body">
+
+        <!-- SIDEBAR -->
+        @include('main');
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- COL-1 -->
+            <div class="main__col-1">
+
+                <!-- HEADING -->
+                <div>
+                    <h2 class="main__heading"><span style="background: linear-gradient(to bottom, hsl(247, 88%, 70%), hsl(282, 82%, 51%)); box-shadow: 0 2px 12px hsla(247, 88%, 70%, .3)">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </span> jumping fitness</h2>
+                    <p class="main__desc">Лучший фитнес для похудения, тонуса и настроения! Уникальные аэробные (кардио) тренировки с элементами танцев под зажигательную музыку.</p>
+
+                </div>
+
+                <!-- LIST -->
+                <div class="main__list-heading-wrap">
+                    <h2 class="main__list-heading ss-heading">В результате jumping fitness гарантирует:</h2>
+
+                </div>
+
+                <ul class="main__list">
+
+                    <li class="main__list-item">
+                        <div>
+                            <p class="main__list-content">Aктивное сжигание калорий</p>
+                        </div>
+                    </li>
+
+                    <li class="main__list-item">
+                        <div class="main__list-content-wrap">
+                            <p class="main__list-content">Укрепление мышц ног, спины, живота, ягодиц</p>
+
+                        </div>
+                    </li>
+
+                    <li class="main__list-item">
+
+                        <div class="main__list-content-wrap">
+                            <p class="main__list-content">Повышение гибкости суставов</p>
+
+                        </div>
+                    </li>
+
+                    <li class="main__list-item">
+                        <div class="main__list-content-wrap">
+                            <p class="main__list-content">Aктивизацию лимфоток</p>
+
+                        </div>
+                    </li>
+
+                    <li class="main__list-item">
+                        <div class="main__list-content-wrap">
+                            <p class="main__list-content">Ускорение обмена веществ</p>
+
+                        </div>
+                    </li>
+
+                    <li class="main__list-item">
+
+                        <div class="main__list-content-wrap">
+                            <p class="main__list-content">Улучшение координации движений</p>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- COL-2 -->
+            <div class="main__col-2">
+
+                <!-- CARDS -->
+                <div class="main__cards-container">
+
+                    <div class="main__cards-container-heading-wrap">
+                        <h2 class="main__cards-container-heading ss-heading">Все это Jumping</h2>
+
+                    </div>
+
+                    <ul class="main__cards">
+                        <li class="main__card" style="--hue: 25">
+                            <div class="main__card-image-container">
+                                <img src="https://ir.ozone.ru/s3/multimedia-e/c350/6481212410.jpg">
+                            </div>
+                            <h3 class="main__card-heading">Кардио</h3>
+                            <p class="main__card-heading-sub">Кардио тренировка: бег, прыжки на батуте</p>
+
+                        </li>
+
+                        <li class="main__card" style="--hue: 250">
+                            <div class="main__card-image-container">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzn0_5ErL-fb3THU3gROgvduIZfUZ2kCs5tTD3AI7bJSDCr1RHpw8MM278HC0lpYANLs&usqp=CAU">
+                            </div>
+                            <h3 class="main__card-heading">Функционал + растяжка</h3>
+                            <p class="main__card-heading-sub">Функциональные упражнения:пресс, гантели, резинки на батуте, растяжка</p>
+
+                        </li>
+
+                        <li class="main__card" style="--hue: 231;">
+                            <div class="main__card-image-container">
+                                <img src="https://ir.ozone.ru/s3/multimedia-e/c350/6481212410.jpg">
+                            </div>
+                            <h3 class="main__card-heading">Веселый кач</h3>
+                            <p class="main__card-heading-sub">Возможны танцевальные элементы и пение хором)</p>
+
+                        </li>
+                    </ul>
+
+                    <div class="main__cards-pagination">
+                <span class="ss-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+
+                    </div>
+
+                </div>
+
+                <!-- CROSSING -->
+                <div class="main__crossing-container">
+                    <div class="main__crossing-image">
+                        <img src="https://images.unsplash.com/photo-1595064085577-7c2ef98ec311?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=70&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=70" alt="">
+                    </div>
+                    <div class="main__crossing-current">
+                        <p class="main__crossing-upper">
+
+                        </p>
+                        <h3 class="main__crossing-heading">
+                            <a href="note" class="header__link">Записаться</a>
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- DISCOVER -->
+                <div class="main__discover">
+
+                    <div class="main__discover-heading-container">
+                        <h3 class="main__discover-heading ss-heading">Противопоказания к тренировкам на батуте</h3>
+
+                    </div>
+
+                    <ul class="main__discover-places">
+
+                        <li class="main__discover-place">
+                            <h4 class="main__discover-place-heading">Болезни сердца и сосудов</h4>
+
+                            <div class="main__discover__more">
+                                <div class="main__discover__more-svg" style="background: linear-gradient(20deg, hsla(0, 60%, 50%, .2), hsla(20, 60%, 50%, .3));">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <defs>
+                                            <linearGradient id="myGradient1" gradientTransform="rotate(20)">
+                                                <stop offset="0%" stop-color="hsl(0, 60%, 50%)" />
+                                                <stop offset="50%" stop-color="hsl(20, 60%, 50%)" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" fill="url(#myGradient1)" />
+                                    </svg>
+                                </div>
+                                <span class="ss-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                            </div>
+                        </li>
+
+                        <li class=" main__discover-place">
+                            <h4 class="main__discover-place-heading">Заболевания глаз</h4>
+
+                            <div class="main__discover__more">
+                                <div class="main__discover__more-svg" style="background: linear-gradient(20deg, hsla(280, 60%, 50%, .2), hsla(300, 60%, 50%, .3));">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <defs>
+                                            <linearGradient id="myGradient2" gradientTransform="rotate(20)">
+                                                <stop offset="0%" stop-color="hsl(280, 60%, 50%)" />
+                                                <stop offset="50%" stop-color="hsl(300, 60%, 50%)" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" fill="url(#myGradient2)" />
+                                    </svg>
+                                </div>
+                                <span class="ss-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                            </div>
+                        </li>
+
+                        <li class="main__discover-place">
+                            <h4 class="main__discover-place-heading">Гипертония</h4>
+
+                            <div class="main__discover__more">
+                                <div class="main__discover__more-svg" style="background: linear-gradient(20deg, hsla(210, 60%, 50%, .2), hsla(230, 60%, 50%, .3));">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <defs>
+                                            <linearGradient id="myGradient3" gradientTransform="rotate(20)">
+                                                <stop offset="0%" stop-color="hsl(210, 60%, 50%)" />
+                                                <stop offset="50%" stop-color="hsl(230, 60%, 50%)" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" fill="url(#myGradient3)" />
+                                    </svg>
+                                </div>
+                                <span class="ss-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                            </div>
+                        </li>
+
+                        <li class="main__discover-place">
+                            <h4 class="main__discover-place-heading">Cахарный диабет</h4>
+
+                            <div class="main__discover__more">
+                                <div class="main__discover__more-svg" style="background: linear-gradient(20deg, hsla(120, 60%, 50%, .2), hsla(140, 60%, 50%, .3));">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <defs>
+                                            <linearGradient id="myGradient4" gradientTransform="rotate(20)">
+                                                <stop offset="0%" stop-color="hsl(120, 60%, 50%)" />
+                                                <stop offset="50%" stop-color="hsl(140, 60%, 50%)" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" fill="url(#myGradient4)" />
+                                    </svg>
+                                </div>
+                                <span class="ss-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+                <!-- FOOTER -->
+                <footer class="main__footer">
+
+
+
+                </footer>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        display: grid;
+        place-content: center;
+        color: hsl(270, 10%, 80%);
+        font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to top right, hsl(270, 50%, 50%), hsl(290, 60%, 70%));
+        min-height: 100vh;
+        padding: 3rem;
+        overflow-x: hidden;
+    }
+
+    button {
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    button:hover,
+    button:focus {
+        outline: none;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        outline: none;
+        text-decoration: none;
+    }
+
+    .dash {
+        background: hsl(270, 50%, 10%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        box-shadow: 4px 4px 30px hsla(270, 30%, 10%, .4);
+        max-width: 1266px;
+    }
+
+    .dash * {
+        transition: all .1s;
+    }
+
+    .header {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        box-shadow: 0 4px 12px hsla(270, 30%, 3%, .2);
+    }
+
+    .header__heading {
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__heading>a {
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: hsl(270, 50%, 10%);
+        background: hsl(220, 60%, 60%);
+        padding: .2rem .7rem;
+        font-size: 1.5rem;
+        border-radius: 4px;
+    }
+
+    .header__heading>a:hover {
+        background: hsl(220, 80%, 64%);
+    }
+
+    .header__search {
+        flex-grow: 1;
+        padding: 0 8.6rem;
+    }
+
+    .header__search-icon {
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 3.8rem;
+        background: hsl(270, 32%, 17%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header__search-icon:hover {
+        background: hsl(270, 32%, 20%);
+    }
+
+    .header__search-icon>svg {
+        height: 1.6rem;
+        opacity: .4;
+    }
+
+    .header__search-icon:hover>svg {
+        opacity: .7;
+    }
+
+    .header__options {
+        padding-right: 2.8rem;
+    }
+
+    .header__pro {
+        color: #eef0ff;
+        background: linear-gradient(to top right, #546FFF, #8A9CFF);
+        border: 0;
+        margin-right: 5rem;
+        font-size: 1.2rem;
+        padding: .7rem 1.8rem;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .header__link {
+        font-size: 1.4rem;
+        opacity: .8;
+        color: inherit;
+    }
+
+    .header__link:first-of-type:hover {
+        opacity: 1;
+    }
+
+    .header__link:not(:first-of-type) {
+        margin-left: 2rem;
+        opacity: 1;
+    }
+
+    .body {
+        flex-grow: 2;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 8rem;
+        box-shadow: 2px 0 12px hsla(270, 30%, 10%, .2);
+    }
+
+    .sidebar__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 4rem;
+        cursor: pointer;
+    }
+
+    .sidebar__icon:first-of-type {
+        margin-top: 5rem;
+    }
+
+    .sidebar__icon:not(:first-of-type) {
+        opacity: .3;
+    }
+
+    .sidebar__icon:not(:first-of-type):hover {
+        opacity: 1;
+    }
+
+    .sidebar__icon:last-child {
+        margin-top: 10rem;
+    }
+
+    .sidebar__icon>svg {
+        height: 2.2rem;
+    }
+
+    .ss-heading {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        color: hsl(235, 5%, 70%);
+    }
+
+    .ss-show {
+        color: hsl(210, 60%, 60%);
+        font-size: 1.2rem;
+    }
+
+    .ss-show:hover {
+        color: hsl(210, 70%, 70%);
+    }
+
+    .ss-dots {
+        display: flex;
+    }
+
+    .ss-dots>span {
+        width: 6px;
+        height: 6px;
+        border: 1px solid currentColor;
+        border-radius: 6px;
+        margin-right: 2px;
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    .ss-dots>span:hover {
+        opacity: 1;
+    }
+
+    .main {
+        flex-grow: 2;
+        background: linear-gradient(to right top, hsla(270, 50%, 8%, .5), hsla(270, 50%, 8%, .6) 20%, hsla(270, 50%, 8%, .1)), linear-gradient(to right bottom, hsl(270, 50%, 8%), transparent 66%), linear-gradient(to bottom, transparent, hsl(270, 50%, 8%) 56%), url("https://images.unsplash.com/photo-1581866327034-c4579d75eb63?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1215") no-repeat;
+        background-size: auto 500px;
+        padding: 4rem 0 0 8rem;
+        display: flex;
+        border-bottom-right-radius: 8px;
+    }
+
+    .main__col-1 {
+        width: 30%;
+    }
+
+    .main__heading {
+        font-size: 3rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+    }
+
+    .main__heading>span {
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin-right: 1.6rem;
+        margin-bottom: -2px;
+    }
+
+    .main__heading svg {
+        height: .7em;
+    }
+
+    .main__desc {
+        margin: 1.5rem 0 1rem;
+        font-size: 1.4rem;
+        opacity: .6
+    }
+
+    .main__sub {
+        font-size: 1.2rem;
+    }
+
+    .main__sub span:first-of-type {
+        opacity: .4;
+    }
+
+    .main__list-heading-wrap {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin: 8rem 0 5rem;
+    }
+
+    .main__list-heading {
+        flex-grow: 2;
+    }
+
+    .main__list {
+        list-style: none;
+        position: relative;
+    }
+
+    .main__list::before {
+        content: "Wadi";
+        position: absolute;
+        bottom: 17%;
+        left: -18%;
+        opacity: .03;
+        font-size: 18rem;
+        font-weight: bold;
+    }
+
+    .main__list-item {
+        padding: 0 0 5.7rem 2rem;
+        border-left: 2px solid hsla(0, 0%, 50%, .2);
+        position: relative;
+        display: flex;
+        color: #9D9DAC;
+    }
+
+    .main__list-item:first-of-type .main__list-content {
+        color: hsl(240, 8%, 90%);
+    }
+
+    .main__list-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background: hsl(210, 70%, 70%);
+        transform: translateX(-3px);
+    }
+
+    .main__list-item:first-of-type::before {
+        top: 0;
+    }
+
+    .main__list-item:first-of-type .main__list-content {
+        line-height: .3;
+    }
+
+    .main__list-item:last-of-type {
+        padding-bottom: 2.6rem;
+    }
+
+    .main__list-item-image {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1px;
+        margin-right: 1rem;
+        box-shadow: 0 2px 10px hsla(270, 30%, 2%, .6);
+    }
+
+    .main__list-item-image img {
+        border-radius: inherit;
+    }
+
+    .main__list-content {
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .main__list-content:hover {
+        color: hsl(240, 8%, 90%);
+    }
+
+    .main__list-sub {
+        margin-top: .4rem;
+        font-size: 1.1rem;
+        opacity: .6;
+    }
+
+    .main__col-2 {
+        width: 70%;
+        padding-left: 6rem;
+    }
+
+    .main__cards-container {
+        width: 70%;
+        border-radius: 8px;
+        padding: 3rem;
+        background: hsl(270, 50%, 11%);
+        box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+        margin-left: auto;
+        transform: translateX(4rem)
+    }
+
+    .main__cards-container-heading-wrap {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .main__cards-container-heading {
+        flex-grow: 2;
+    }
+
+    .main__cards {
+        list-style: none;
+        padding: 2.6rem 0 2rem;
+        display: flex;
+    }
+
+    .main__card {
+        color: hsla(0, 0%, 100%, .8);
+        transform: translateX(-15rem);
+        flex-shrink: 0;
+        margin-left: 1.5rem;
+        width: 21rem;
+        border-radius: 8px;
+        text-align: right;
+        padding: 2.2rem;
+        box-shadow: 0 2px 12px hsla(var(--hue), 50%, 60%, .2), 0 4px 32px hsla(var(--hue), 50%, 60%, .2);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .main__card-image-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .main__card-image-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, hsla(var(--hue), 60%, 60%, .3), 40%, hsl(var(--hue), 70%, 60%));
+    }
+
+    .main__card-heading {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    .main__card-heading-sub {
+        margin-top: .4rem;
+        font-size: 1.2rem;
+    }
+
+    .main__card-heading-type {
+        margin-top: 2.8rem;
+    }
+
+    .main__cards-pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__cards-buttons>button {
+        color: inherit;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .main__cards-buttons>button:hover {
+        opacity: 1 !important;
+    }
+
+    .main__cards-buttons svg {
+        height: 1.6rem;
+    }
+
+    .main__crossing-container {
+        width: 88%;
+        background-color: hsl(270, 50%, 11%);
+        background-image: linear-gradient(120deg, hsla(26, 80%, 50%, .5), 10%, hsl(270, 50%, 11%) 60%), url("https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=600");
+        box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+        border-radius: 8px;
+        padding: 2rem 3.6rem;
+        display: flex;
+        align-items: center;
+        transform: translate(-2rem, 2.4rem);
+        position: relative;
+        z-index: 2;
+    }
+
+    .main__crossing-image {
+        border: 3px solid hsl(215, 60%, 40%);
+        border-right-color: transparent;
+        box-shadow: 0 0 12px hsla(270, 30%, 10%, .4);
+        transform: rotate(-45deg);
+        width: 5.4rem;
+        height: 5.4rem;
+        border-radius: 5.4rem;
+        overflow: hidden;
+    }
+
+    .main__crossing-image>img {
+        width: 5.4rem;
+        transform: translate(-3px, -3px) rotate(45deg);
+        border-radius: 5.4rem;
+        border: 6px solid transparent;
+    }
+
+    .main__crossing-current {
+        flex-grow: 2;
+        margin-left: 3rem;
+    }
+
+    .main__crossing-upper {
+        text-transform: uppercase;
+        margin-bottom: .6rem;
+        letter-spacing: 2px;
+    }
+
+    .main__crossing-heading {
+        font-weight: normal;
+        font-size: 1.6rem;
+    }
+
+    .main__discover {
+        width: 88%;
+        background-color: hsl(270, 50%, 11%);
+        box-shadow: 0 8px 12px 0 hsla(270, 30%, 5%, .2);
+        border-radius: 8px;
+        padding: 8rem 3.6rem 2rem;
+        margin-left: auto;
+        transform: translate(1.4rem, -2.1rem);
+    }
+
+    .main__discover-heading-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .main__discover-heading {
+        flex-grow: 2;
+    }
+
+    .main__discover-places {
+        padding: 4rem 0 1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .main__discover-place {
+        flex-shrink: 0;
+        margin-right: 1.4rem;
+        background: hsl(270, 50%, 15%);
+        transform: translateX(-8rem);
+        padding: 1.6rem;
+        width: 24%;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px 0 hsla(270, 30%, 7%, .2);
+        cursor: pointer;
+    }
+
+    .main__discover-place:hover {
+        background: hsl(270, 50%, 17%);
+    }
+
+    .main__discover-place-heading {
+        font-size: 1.4rem;
+        font-weight: normal;
+        margin-bottom: 6px;
+    }
+
+    .main__discover-place-sub {
+        font-size: 1rem;
+        opacity: .4;
+    }
+
+    .main__discover__more {
+        margin-top: 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__discover__more-svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 8px;
+    }
+
+    .main__discover__more svg {
+        height: 2.6rem;
+        transform: translate(2.4px, 1.6px);
+    }
+
+    .main__discover-right {
+        opacity: .6;
+        margin-left: -45px;
+        cursor: pointer;
+    }
+
+    .main__discover-right:hover {
+        opacity: 1;
+    }
+
+    .main__discover-right>svg {
+        height: 1.6rem;
+    }
+
+    .main__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .2rem 0 2.3rem 10rem;
+    }
+
+    .main__footer-more svg {
+        height: 1em;
+        vertical-align: middle;
+    }
+
+    .main__info {
+        display: flex;
+        align-items: center;
+    }
+
+    .main__info-link {
+        color: inherit;
+        font-size: 1.4rem;
+    }
+
+    .main__info-link:hover {
+        color: #fff;
+    }
+
+    .main__info-link:hover svg {
+        opacity: .7;
+    }
+
+    .main__info-link svg {
+        height: 1.4em;
+        transform: translateY(1px);
+        opacity: .4;
+    }
+
+    .main__info-link+.main__info-link {
+        margin-left: .6rem;
+    }
+
+    .main__cp {
+        margin: 0 1rem 0 2.6rem;
+    }
+
+    .main__cr {
+        opacity: .4;
+        margin-right: 5rem;
+    }
+
+    .main__cr:hover {
+        opacity: .7;
+    }
+</style>
